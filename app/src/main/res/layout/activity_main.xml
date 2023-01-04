@@ -11,10 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"
         app:layout_constraintBottom_toTopOf="@id/roll_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/discdiceimage"/>
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"

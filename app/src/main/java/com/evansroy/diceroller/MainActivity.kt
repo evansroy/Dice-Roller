@@ -8,6 +8,9 @@ import android.widget.TextView
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+
+     lateinit var diceImage:ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
         val randomInt = Random.nextInt(6) + 1
-        val diceImage:ImageView = findViewById(R.id.dice_image)
+        diceImage = findViewById(R.id.dice_image)
 
         val drawableResource = when(randomInt){
 
